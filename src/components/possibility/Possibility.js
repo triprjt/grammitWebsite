@@ -6,7 +6,7 @@ const Possibility = () => {
     <div className='pbl gradient__bg4'>
       <p className="gradient__text ">How it works?</p>
       <div className='gpt3__pbl service_margin service__padding'>
-        <div className='p1 gradient__bg5' >
+          <div className='p1 gradient__bg5' >
                   <ul>
                     <li><a className='step'>Step1</a></li>
                     {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
@@ -29,7 +29,7 @@ const Possibility = () => {
                     <li><a className='step'>Step3</a></li>
                     {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
                     <li><a className='l1'>Integrate code platforms</a></li>
-                    <li><a className='l2 m1'>Codechef, Leetcode, HackerRank <br/> Let us know your favorite platform where you code</a></li>
+                    <li><span className='l2 m1'>Codechef, Leetcode, HackerRank <br/> Let us know your favorite platform where you code</span></li>
                   </ul>
           </div>
 

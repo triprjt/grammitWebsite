@@ -22,7 +22,7 @@
     /* text-align: center; */
 }
 .gpt3__footer__heading-join{
-    font-size: 55px;
+    /* font-size: 55px; */
     /* margin-top: 6rem; */
     margin-right: auto;
     margin-left: auto;
@@ -100,7 +100,13 @@
 #privacy{
     cursor: pointer;
 }
-@media screen and (max-width: 490px){
+@media screen and (max-width: 1000px) {
+    .gpt3__footer__heading h1{
+        font-size: 36px;
+    }
+    
+}
+@media screen and (max-width: 550px){
     .gpt3__footer__links__social-container{
         flex-direction: column;
     }
@@ -111,10 +117,10 @@
     }
     .gpt3__footer__heading h1
     {
-        font-size: 36px;
+        font-size: 25px;
     }
     .gpt3__footer{
-        margin-top: 95rem;
+        margin-top: 20rem;
         padding: 3rem;
     }
     .gpt3__footer__links__social-container .social-icons{
