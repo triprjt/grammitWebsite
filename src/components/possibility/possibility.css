@@ -1,0 +1,133 @@
+.pbl{
+    box-sizing: border-box;
+    height: 1100px;
+}
+.gpt3__pbl{
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+    display: flex;
+    padding: 10rem;
+    /* flex-wrap: wrap; */
+    height: 700px;
+    margin: auto;
+    gap: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-content: center; */
+    opacity: 0.6;
+    /* box-sizing: border-box; */
+}
+
+.p1{
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    /* border: 1px solid lawngreen; */
+    outline: none;
+    width: 100%;
+    border-radius: 2rem;
+    line-height: 70px;
+}
+/* .p1 :nth-child(3){margin-bottom: 20px;} */
+.p1:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+.l1{
+    text-align: center;
+    font-family: var(--font-family);
+    /* color: var(--color-text); */
+    color: silver;
+    font-style: bolder;
+    outline: none;
+    text-shadow: black;
+    /* border: 2px solid greenyellow; */
+    display: block;
+    font-size: 40px;
+    line-height: 45px;
+}
+.l2{
+    display: block;
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+    opacity: 0.4;
+    margin-top:40px;
+        /* border: 2px solid goldenrod; */
+        text-align: center;
+        line-height: normal;
+}
+
+.step{
+    display: block;
+    text-align: start;
+    margin-left: 2rem;
+    /* border: 1px solid goldenrod; */
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+
+
+p{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+    margin-left: 8rem;
+    max-width: 100%;
+    align-self: center;
+} 
+
+@media screen and (max-width: 1650px) {
+    .l1{    
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .gpt3__pbl{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem;
+        height: 50%;
+    }
+}
+@media screen and (max-width: 650px){
+    p{font-size: 55px;}
+}
+@media screen and (max-width: 490px){
+    p{
+        font-size: 36px;
+        line-height: 48px;
+        margin-left: 4rem;
+    }
+    .l2
+    {
+        flex-wrap: wrap;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .m1 .m2{
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p1 #dwld{
+        height: 75%;
+    }
+}
