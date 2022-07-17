@@ -3,9 +3,9 @@ import './possibility.css'
 
 const Possibility = () => {
   return (
-    <div className='pbl gradient__bg4'>
-      <p className="gradient__text ">How it works?</p>
-      <div className='gpt3__pbl service_margin service__padding'>
+    <div className=''>
+      <p className=" ">How it works?</p>
+      <div className='grid grid-cols-1 md:grid-cols-5 gap-10'>
           <div className='p1 gradient__bg5' >
                   <ul>
                     <li><a className='step'>Step1</a></li>
