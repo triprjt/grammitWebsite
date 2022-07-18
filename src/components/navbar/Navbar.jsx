@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className= "gpt3__navbar-links_container">
           <p><a onClick={WhitepaperOpen}>Whitepaper</a></p>
-          <p><a href = "#comm" alt='comm' className='gpt3__navbar-links_container-comm'>Join the community</a></p>
+          <p><a href = "https://discord.gg/uJbmBWjJup" alt='comm' className='gpt3__navbar-links_container-comm'>Join the community</a></p>
         </div>
       </div>
       <div className = "gpt3__navbar-menu">
