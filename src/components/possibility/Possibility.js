@@ -4,52 +4,47 @@ import './possibility.css'
 const Possibility = () => {
   return (
     <div className='pbl gradient__bg4'>
-      <p className="gradient__text ">How it works?</p>
+      <h2 className="gradient__text ">How it works?</h2>
       <div className='gpt3__pbl service_margin service__padding'>
-          <div className='p1 gradient__bg5' >
-                  <ul>
-                    <li><a className='step'>Step1</a></li>
-                    {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
-                    <li><a className='l1 l11'>Download App<br/>  </a></li>
-                    <li><a className='l2'>Sign up for waitlist and <br/>Get early access to beta version</a></li>
-                  </ul>
+          <div className='flexNone'>
+            <div className='p1 gradient__bg5' >
+                <a className='step'>Step1</a>
+                <h3 className='l1 l11'>Download App<br/>  </h3>
+                <p className='l2'>Sign up for waitlist and Get early access to beta version</p>
+            </div>
           </div>
 
-          <div className='p1 gradient__pbl-middle'>
-                  <ul>
-                    <li><a className='step'>Step2</a></li>
-                    {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
-                    <li><a className='l1 l11'>Mint NFT<br/> </a></li>
-                    <li><a className='l2'>Mint your exclusive programmer NFT <br/> Get ready to GrammIt</a></li>
-                  </ul>
+          <div className='flexNone'>
+            <div className='p1 gradient__pbl-middle'>
+                <a className='step'>Step2</a>
+                <h3 className='l1 l11'>Mint NFT<br/> </h3>
+                <p className='l2'>Mint your exclusive programmer NFT. Get ready to GrammIt</p>
+            </div>
           </div>
 
-          <div className='p1 gradient__pbl-bot2'>
-                  <ul>
-                    <li><a className='step'>Step3</a></li>
-                    {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
-                    <li><a className='l1'>Integrate code platforms</a></li>
-                    <li><span className='l2 m1'>Codechef, Leetcode, HackerRank <br/> Let us know your favorite platform where you code</span></li>
-                  </ul>
+          <div className='flexNone'>
+            <div className='p1 gradient__pbl-bot2'>
+                  <a className='step'>Step3</a>
+                  <h3 className='l1'>Integrate code platforms</h3>
+                  <p className='l2 m1'>Let us know your favorite platform where you code</p>
+            </div>
           </div>
 
-          <div className='p1 gradient__pbl-right'>
-                  <ul>
-                    <li><a className='step'>Step4</a></li>
-                    {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
-                    <li><a className='l1'>Practise and earn reward</a></li>
-                    <li><a className='l2 m1'>As you practice programming everyday  <br/>you keep earning $Gramm tokens</a></li>
-                  </ul>
+          <div className='flexNone'>
+            <div className='p1 gradient__pbl-right'>
+                  <a className='step'>Step4</a>
+                  <h3 className='l1'>Practise and earn reward</h3>
+                  <p className='l2 m1'>As you practice programming everyday, you keep earning $Gramm tokens</p>
+            </div>
           </div>
 
-          <div className='p1 gradient__bg5'>
-                  <ul>
-                    <li><a className='step'>Step5</a></li>
-                    {/* <li><img src="https://fitmint.io/howto/step1.svg"/></li> */}
-                    <li><a className='l1'>Play, Network and Earn More</a></li>
-                    <li><a className='l2 m2'>Unlock more features, as your NFT upgrades<br/>Enjoy the benefits of the exclusive community</a></li>
-                  </ul>
-          </div>
+          {/* <div className='flexNone'>
+            <div className='p1 gradient__bg5'>
+                  <a className='step'>Step5</a>
+                  <h4 className='l1'>Play, Network &amp; Earn More</h4>
+                  <p className='l2 m2'>Unlock more features, as your NFT upgrades. Enjoy the benefits of the exclusive community</p>
+            </div>
+          </div> */}
       </div>
     </div>
   )

@@ -1,42 +1,38 @@
 .pbl{
-    box-sizing: border-box;
-    height: 1100px;
+    /* box-sizing: border-box; */
+    /* height: 1100px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 .gpt3__pbl{
     flex: 1;
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 1; */
     display: flex;
-    padding: 10rem;
-    /* flex-wrap: wrap; */
-    /* min-height: 650px; */
-    margin: auto;
-    gap: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    /* justify-content: center; */
+    /* padding: 5rem; */
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 8rem;
+    gap: 0.5rem;
+    padding-left: 2rem/* 32px */;
+    padding-right: 2rem/* 32px */;
     opacity: 0.6;
-    /* box-sizing: border-box; */
+    justify-content: flex-start;
+    /* border: 2px solid goldenrod; */
 }
-
+.flexNone{
+    flex: none;
+}
 .p1{
     color: white;
-    /* display: flex; */
-    /* height:min-content; */
-    flex: 1;
+    display: flex;
+    /* flex: 1; */
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    /* border: 1px solid lawngreen; */
-    /* outline: 3px dashed white; */
-    width: 100%;
+    width: 2rem/* 288px */;
+    height: 15rem;
     border-radius: 2rem;
-    line-height: 70px;
+    /* line-height: 4.38rem; 70px */
     padding-bottom: 2rem;
-    align-items: center;
+    /* border: 2px dashed blueviolet; */
 }
-/* .p1 :nth-child(3){margin-bottom: 20px;} */
 .p1:hover{
     opacity: 0.9;
     cursor: pointer;
@@ -45,6 +41,7 @@ ul{
     list-style: none;
 }
 .l1{
+    align-items: center;
     text-align: center;
     font-family: var(--font-family);
     /* color: var(--color-text); */
@@ -53,23 +50,24 @@ ul{
     outline: none;
     text-shadow: black;
     /* border: 2px solid greenyellow; */
-    display: block;
-    font-size: 40px;
-    line-height: normal;
+    /* display: block; */
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /* width: 75%; */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .l2{
-    display: flex;
+    /* display: flex; */
     /* place-items: center; */
     flex: 1;
-    font-size: 25px;
+    font-size: 1.5rem;
     opacity: 0.4;
-    margin-top:auto;
-    margin-bottom: auto;
-    padding-top: 1rem;
-        /* border: 3px dashed goldenrod; */
-        text-align: center;
-        vertical-align: center;
-        line-height: normal;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    /* border: 3px dashed goldenrod; */
+    line-height: 1.6rem;
 }
 
 .step{
@@ -79,14 +77,12 @@ ul{
     /* border: 1px solid goldenrod; */
     font-family: var(--font-family);
     font-size: 20px;
+    padding-top: 1.25rem;
 }
-
-
-
-p{
+h2{
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 90px;
+    font-size: 5.625rem;
     line-height: 75px;
     letter-spacing: -0.04em;
     margin-bottom: 1rem;
@@ -95,7 +91,26 @@ p{
     align-self: center;
 } 
 
-@media screen and (max-width: 1650px) {
+/* NEW PART */
+@media (min-width: 768px) {
+    .gpt3__pbl{
+        padding-left: 3rem/* 48px */;
+        padding-right: 3rem/* 48px */;
+        overflow-x: scroll;
+    }
+    .p1{
+        width: 20rem/* 320px */;
+    }
+
+}
+@media (min-width: 1280px) {
+    .gpt3__pbl {
+        overflow: hidden;
+    }
+}
+
+/* OLDPART */
+/* @media screen and (max-width: 1650px) {
     p{font-size: 65px;}
     .l1{    
         font-size: 30px;
@@ -104,23 +119,23 @@ p{
 }
 
 @media screen and (max-width: 1550px) {
-    /* .gpt3__pbl{
+    .gpt3__pbl{
         display: flex;
         flex-wrap: wrap;
         padding: 4rem;
         height: 50%;
-    } */
+    }
     .gpt3__pbl{
         gap: 1rem;
         width: auto;
     }
     .l2{
-        font-size: 22px;
+        font-size: 1.38rem;
         margin-top: 1rem;
     }
     .l1{
         font-size: X-large;
-        line-height: 35px;
+        line-height: 2.18rem;
     }
     .m1{
 
@@ -132,13 +147,13 @@ p{
 @media screen and (max-width: 550px){
     .pbl p{
         margin-bottom:0.5rem;
-        /* height: 1300px; */
+        height: 1300px;
     }
     .gpt3__pbl{
         flex-direction: column;
         min-width:auto;
         padding: 3rem;
-        /* height: 2000px; */
+        height: 2000px;
     }
     p{
         font-size: 36px;
@@ -156,11 +171,11 @@ p{
         padding-top: 0.1rem;
     }
     .m1 .m2{
-        /* width: 100%; */
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
     .p1 #dwld{
         height: 75%;
     }
-}
+} */

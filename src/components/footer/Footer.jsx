@@ -10,19 +10,17 @@ const Footer = () => {
   return (
     <div className='gpt3__footer service_margin gradient__bg3'>
       <div className="gradient__text gpt3__footer__heading">
-        <h1 className='gpt3__footer__heading__h1'>Get Set GrammIt</h1>      
-        <h1 className='gpt3__footer__heading-join'><a href="#comm">Join the community</a></h1>
+        <h3 className='gpt3__footer__heading__h1'>Get Set GrammIt</h3>      
+        <h5 className='gpt3__footer__heading-join'><a href="https://discord.gg/uJbmBWjJup">Join the community</a></h5>
       </div>
       {/* <div > */}
       
       <div class="gpt3__footer__links__social-container">
         <h1 className='gpt3__footer__logo'>GrammIt</h1>
         <ul class="social-icons">
-            <li><a href="#"><img src={discord} /></a></li>
-            <li><a href="#"><img src={twitter} /></a></li> 
-            {/* <li><a href="#"><img src={insta} /></a></li>
-            <li><a href="#"><img src={linkedin} /></a></li>  */}
-            <li><a href="#"><img src={telegram} /></a></li> 
+            <li><a href="https://discord.gg/uJbmBWjJup"><img src={discord} /></a></li>
+            <li><a href="https://twitter.com/GrammitClub"><img src={twitter} /></a></li> 
+            <li><a href="https://t.me/+teem-SHJ1bM3ZjM1"><img src={telegram} /></a></li> 
         </ul>
       </div>
         <div className='gpt3__footer__links'>
