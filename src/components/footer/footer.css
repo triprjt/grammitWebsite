@@ -13,11 +13,12 @@
     /* border: 10px solid red; */
     display: flex; 
     flex-direction: column;
-    font-size: 3.625rem;
+    font-size: 3rem;
     font-weight: 400;
     gap: 2rem;
      /* flex: 1; */
     /* align-content: center; */
+    margin-top: 4rem;
     margin-bottom: 8rem;
     letter-spacing: -0.04rem;
     /* text-align: center; */
@@ -28,7 +29,7 @@
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 300;
 }
 .gpt3__footer__heading__h1{
@@ -72,11 +73,12 @@
     width: 60%;
     align-content: center;
 }
-.gpt3__footer__links__social-container .social-icons{
+.social-icons{
     display: flex;
     flex: 2;
     /* border: 10px solid blue; */
     gap: 5rem;
+    /* width: 100%; */
     /* border: 10px solid red; */
     /* background-color: white; */
 }
@@ -93,7 +95,7 @@
     color: grey;
     font-family: var(--font-family);
     font-size: 20px;
-    margin-bottom: auto;
+    margin-bottom: 3rem;
     margin-top: auto;
 }
 .gpt3__footer__links-icons{
@@ -103,24 +105,37 @@
 #privacy{
     cursor: pointer;
 }
+
 @media screen and (max-width: 1000px) {
     .gpt3__footer__heading h1{
         font-size: 36px;
     }
+    .gpt3__footer__copyright{
+        margin-bottom: 3rem;
+    }
+    #telegram{
+        width: 88%;
+    }
+    
     
 }
 @media screen and (max-width: 550px){
     .gpt3__footer__links__social-container{
         flex-direction: column;
     }
-
     .social-icons{
         gap: 1.5rem;
         flex: 1;
     }
-    .gpt3__footer__heading h1
+    .gpt3__footer__heading{
+        margin-bottom: 4rem;
+    }
+    .gpt3__footer__heading h3
     {
-        font-size: 25px;
+        font-size: 2.56rem;
+    }
+    .gpt3__footer__heading-join {
+        font-size: 1.8rem;
     }
     .gpt3__footer{
         /* margin-top: 20rem; */
@@ -132,5 +147,12 @@
     .gpt3__footer__links__social-container{
         gap: 2rem;
     }
-    .gpt3__footer__copyright ul{flex-direction: column;}
+    .gpt3__footer__copyright ul{
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    #telegram{
+        width: 88%;
+    }
+    
 }

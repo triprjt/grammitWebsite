@@ -68,6 +68,7 @@ ul{
     padding-top: 0.5rem;
     /* border: 3px dashed goldenrod; */
     line-height: 1.6rem;
+    text-align: center;
 }
 
 .step{
@@ -97,10 +98,15 @@ h2{
         padding-left: 3rem;
         padding-right: 3rem;
         overflow-x: scroll;
+        margin-top: 2.5rem;
     }
     h2{
         font-size: 3rem;
         line-height: 75px;
+        align-self: flex-start;
+        font-weight: 500;
+        line-height: 2.5rem;
+        margin-left: 3rem;
     }
     .p1{
         width: 20rem;
@@ -109,6 +115,23 @@ h2{
 @media (min-width: 1280px) {
     .gpt3__pbl {
         overflow: hidden;
+    }
+    h2{
+        font-family: var(--font-family);
+        font-weight: 800;
+        font-size: 4.625rem;
+        line-height: 75px;
+        letter-spacing: -0.04em;
+        margin-bottom: 1rem;
+        margin-left: 6rem;
+        max-width: 100%;
+        align-self: flex-start;
+    } 
+    .gpt3__pbl{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        overflow-x: scroll;
+        margin-top: 4rem;
     }
 }
 

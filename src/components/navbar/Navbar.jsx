@@ -26,8 +26,8 @@ const Navbar = () => {
         {toggleMenu && (
           <div className = "gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-              <p><a onClick={WhitepaperOpen}>Whitepaper</a></p>
-              <p><a href = "https://discord.gg/uJbmBWjJup">Join the community</a></p>
+              <a onClick={WhitepaperOpen}>Whitepaper</a>
+              <a href = "https://discord.gg/uJbmBWjJup">Join the community</a>
             </div>
           </div>
         )}
