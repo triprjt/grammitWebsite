@@ -66,7 +66,6 @@ ul{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
-    /* border: 3px dashed goldenrod; */
     line-height: 1.6rem;
     text-align: center;
 }
@@ -123,15 +122,17 @@ h2{
         line-height: 75px;
         letter-spacing: -0.04em;
         margin-bottom: 1rem;
-        margin-left: 6rem;
+        margin-left: 10rem;
         max-width: 100%;
-        align-self: flex-start;
+        /* align-self: flex-start; */
     } 
     .gpt3__pbl{
         padding-left: 3rem;
         padding-right: 3rem;
         overflow-x: scroll;
         margin-top: 4rem;
+        align-items: center;
+        justify-content: center;
     }
 }
 
