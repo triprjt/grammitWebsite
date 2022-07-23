@@ -6,11 +6,13 @@
     align-content: flex-start;
     /* height: 750px; */
     padding-left: 10rem;
+    padding-right: 10rem;
+    /* margin-top: 4rem; */
     /* border: 10px solid goldenrod; */
 }
 .gpt3__footer__heading {
     width: 100%;
-    /* border: 10px solid red; */
+    /* border: 2px solid red; */
     display: flex; 
     flex-direction: column;
     font-size: 3rem;
@@ -18,7 +20,6 @@
     gap: 2rem;
      /* flex: 1; */
     /* align-content: center; */
-    margin-top: 4rem;
     margin-bottom: 8rem;
     letter-spacing: -0.04rem;
     /* text-align: center; */
@@ -34,23 +35,26 @@
 }
 .gpt3__footer__heading__h1{
     /* letter-spacing: -0.04em; */
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0;
+    text-align: center;
+    font-size: 4.625rem;
+    font-weight: 600;
+    line-height: 75px;
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 .gpt3__footer__links-icons{
 
 }
-.gpt3__footer__copyright ul{
-    display: flex;
-    flex: 1;
-}
-.privacy a{
-    cursor: pointer;
+.gpt3__footer__copyright{
+    text-align: center;
 }
 .gpt3__footer__logo{
     color: var(--color-text);
     /* border: 10px solid yellow; */
     width: 100%;
+    font-size: 3rem;
+    cursor: pointer;
     /* flex: 1; */
 }
 .gpt3__footer__links{
@@ -91,33 +95,24 @@
     cursor: pointer;
 }
 .gpt3__footer__copyright{
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     color: grey;
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: 1rem;
     margin-bottom: 3rem;
-    margin-top: auto;
+    margin-top: 2rem;
 }
 .gpt3__footer__links-icons{
     /* margin-left: auto; */
     /* text-align: end; */
 }
-#privacy{
-    cursor: pointer;
-}
-
 @media screen and (max-width: 1000px) {
     .gpt3__footer__heading h1{
         font-size: 36px;
     }
-    .gpt3__footer__copyright{
-        margin-bottom: 3rem;
-    }
     #telegram{
         width: 88%;
     }
-    
-    
 }
 @media screen and (max-width: 550px){
     .gpt3__footer__links__social-container{
@@ -132,7 +127,10 @@
     }
     .gpt3__footer__heading h3
     {
-        font-size: 2.56rem;
+        font-size: 2.8rem;
+        /* line-height: 75px; */
+        font-weight: 300;
+        line-height: 2.5rem;
     }
     .gpt3__footer__heading-join {
         font-size: 1.8rem;
@@ -147,8 +145,7 @@
     .gpt3__footer__links__social-container{
         gap: 2rem;
     }
-    .gpt3__footer__copyright ul{
-        flex-direction: column;
+    .gpt3__footer__copyright{
         margin-bottom: 0.5rem;
     }
     #telegram{

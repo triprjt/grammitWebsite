@@ -9,10 +9,11 @@
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    margin-top: 60px;
-    height: 800px;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    /* height: 800px; */
     /* box-sizing: border-box; */
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
 }
 .gpt3__header-content h1{
     font-family: var(--font-family);
@@ -21,7 +22,6 @@
     /* line-height: 75px; */
     letter-spacing: -0.04em;
     margin-bottom: 1rem;
-    margin-top: -10rem;
     max-width: 100%;
     align-self: center;
 }
@@ -115,6 +115,10 @@ opacity: 0.4;
     .gpt3__header-content__input{
         width: 100%;
     }
+    .gpt3__header-content{
+        margin-bottom: 6rem;
+
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -145,10 +149,11 @@ opacity: 0.4;
         margin-right: auto;
         font-size: 28px;
         line-height: normal;
+        margin-bottom: 2rem;
         /* border: 3px dashed white; */
     }
     .gpt3__header-content{
-        height: 600px;
+        /* height: 600px; */
     }
 
     .gpt3__header-content h1 {

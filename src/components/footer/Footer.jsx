@@ -25,19 +25,15 @@ const Footer = () => {
       </div>
         <div className='gpt3__footer__links'>
           <ul>
-            <li><a>Whitepaper</a></li>
-            <li><a>hello@grammit.com</a></li>
-            <li><a>Token contract</a></li>
+            <li><a href='https://hackmint.gitbook.io/hackmint/'>Whitepaper</a></li>
+            <li><a href=''>hello@grammit.com</a></li>
+            <li><a href=''>Token Contract</a></li>
+            <li><a href=''>Privacy Policy</a></li>
           </ul>
         </div>
         <div className='gpt3__footer__copyright'>
-          <ul>
-            <li>©GrammIt </li>
-            <li> ● all rights reserved </li>
-            <li> <a id="privacy" href="https://fitmint.io/privacy">  ● privacy policy</a></li>
-          </ul>
+            <p>©GrammIt 2022-23 All Rights Reserved </p>
         </div>
-      {/* </div> */}
     </div>
   )
 };

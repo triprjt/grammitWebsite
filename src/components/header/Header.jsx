@@ -41,12 +41,6 @@ const Header = () => {
       <div className="gpt3__header-content">
         <h1 className="gradient__text">Practice Programming, Earn $Gramm</h1>
         <a>Now get rewarded for your coding practice, skills and achievements across any platform in the world<br/>Learn and earn</a>
-        {/* <div className="gpt3__header-content__input">
-          email: <input type="email" id="email" name="email" placeholder="your email address"/>
-          <button type = "button" onClick={
-            ()=>saveEmail()
-            }> Get Started</button>
-        </div> */}
         <div className='gpt3__header__user-input'>
           {toggleEmail
             ? <div className="gpt3__header-content__input">
