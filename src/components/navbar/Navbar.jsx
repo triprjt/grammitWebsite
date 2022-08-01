@@ -3,7 +3,7 @@ import './navbar.css'
 import {RiMenu3line, RiCloseLine, RiMenuFill,RiMenu3Fill} from 'react-icons/ri'
 
 const WhitepaperOpen=()=>{
-  window.open('https://hackmint.gitbook.io/hackmint/', '_blank');
+  window.open('https://grammit.gitbook.io/hackmint/', '_blank');
 }
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false) 
