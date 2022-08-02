@@ -26,7 +26,7 @@ const Possibility = () => {
             <div className='p1 gradient__pbl-bot2'>
                   <a className='step'>Step3</a>
                   <h3 className='l1'>Mint NFT</h3>
-                  <p className='l2 m1'>Get your exclusive Programmer NFT, depending on your current coding level</p>
+                  <p className='l2 m1'>Get your exclusive Programmer NFT</p>
             </div>
           </div>
 
