@@ -27,7 +27,7 @@ const Header = () => {
     }
     // cancelCourse();
     // e.target.reset;
-    fetch('https://hackmint-loading-default-rtdb.firebaseio.com/emailList.json?auth=xNwR8vwA6wZhSvJ7eXKyY3WDI1wXJwJhzadEWxs5', {  // Enter your IP address here
+    fetch('https://grammitlanding-default-rtdb.firebaseio.com/emailList.json?auth=9pE1NZKUebW974Yp1pEXE4OBxd8G3hgSZH2XpQFD', {  // Enter your IP address here
   
     method: 'POST', 
     mode: 'cors', 
