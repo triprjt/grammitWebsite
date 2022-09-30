@@ -6,12 +6,22 @@ import twitter from '../../assets/twitter.svg';
 // import insta from '../../assets/insta.png';
 import telegram from '../../assets/telegram.svg';
 // import linkedin from '../../assets/linkedin.svg';
+import MobileStoreButton from 'react-mobile-store-button';
+
 const Footer = () => {
+  const androidUrl='https://play.google.com/store/apps/details?id=club.grammit.grammit';
   return (
     <div className='gpt3__footer service_margin gradient__bg3'>
       <div className="gradient__text gpt3__footer__heading">
         <h3 className='gpt3__footer__heading__h1'>Get Set GrammIt</h3>      
         <h5 className='gpt3__footer__heading-join'><a href="https://discord.gg/uJbmBWjJup">Join the community</a></h5>
+      </div>
+      <div className='downloadButton'>
+          <MobileStoreButton
+            store="android"
+            url={androidUrl}
+            linkProps={{ title: 'Download Grammit App' }}
+          />
       </div>
       {/* <div > */}
       
@@ -20,7 +30,7 @@ const Footer = () => {
         <ul class="social-icons">
             <li><a href="https://discord.gg/uJbmBWjJup"><img src={discord} /></a></li>
             <li><a href="https://twitter.com/GrammitClub"><img src={twitter}/></a></li> 
-            <li><a href="https://t.me/+teem-SHJ1bM3ZjM1"><img src={telegram}  id="telegram"/></a></li> 
+            <li><a href="https://t.me/+teem-SHJ1bM3ZjM1"><img src={telegram}  id="telegram"/></a></li>
         </ul>
       </div>
         <div className='gpt3__footer__links'>

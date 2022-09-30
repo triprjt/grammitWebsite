@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './header.css'
-
+import PlayStoreImage from '/Users/trip/git/react/landinghm/grammitRecent/grammitlanding/grammitWebsite/src/components/playStoreButton.png'
+import MobileStoreButton from 'react-mobile-store-button';
 const storeEmail=(email)=>[
 ]
 const path = '../../assets/file1.txt'
@@ -15,6 +16,7 @@ var EmailContact = []
 // }
 const Header = () => {
   const [toggleEmail, setToggleEmail] = useState(true)
+  const androidUrl='https://play.google.com/store/apps/details?id=club.grammit.grammit';
   const saveEmail = function(){
     setToggleEmail(false)
     var email = document.getElementById('email').value
@@ -53,13 +55,15 @@ const Header = () => {
             : <div className="gpt3__header-content__input-after "><span className='gradient__text'>Please check that a confirmation email might have arrived<br/> and Welcome!</span> <span>😍</span></div>
               }
         </div>
-      </div>
-      
-      {/* <div className="gpt3__header-image">
-        <img src={ai} alt="ai"/>
-      </div>      */}
+      </div>   
+      <div className='downloadButton'>
+        <a href={androidUrl} target="_blank" id='playStoreImage'>
+          <img src={PlayStoreImage} id='playStoreImage'/>
+        </a>
+      </div>   
     </div>
   )
 }
 
 export default Header
+
