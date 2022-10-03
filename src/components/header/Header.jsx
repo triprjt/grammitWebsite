@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './header.css'
-import PlayStoreImage from '/Users/trip/git/react/landinghm/grammitRecent/grammitlanding/grammitWebsite/src/components/playStoreButton.png'
+import PlayStoreImage from './playStoreButton.png';
 import MobileStoreButton from 'react-mobile-store-button';
 const storeEmail=(email)=>[
 ]
@@ -14,10 +14,45 @@ var EmailContact = []
 //         }> Get Started</button>
 //   </div>
 // }
+
+const emailSender =  (email) =>  {
+
+  const sendEmailUrl = 'https://api.emailjs.com/api/v1.0/email/send';
+  const serviceId = 'service_n31e39k';
+  const templateId = 'template_cmmts0a';
+  const userId = 'QdGbyrySeY-8Io4bq';
+
+  var partsArray = email.split('@');
+  var emailName = partsArray[0];
+
+  var jsonData = {
+    "service_id": serviceId,
+    'template_id': templateId,
+    'user_id': userId,
+    'template_params': {
+      'to_name': emailName,
+      'to_email': email,
+      'user_email': 'hello@grammit.club',
+    },
+
+  }
+  
+  fetch(sendEmailUrl, {  
+  
+    method: 'POST', 
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    mode: 'cors', 
+    body: JSON.stringify(jsonData) // body data type must match "Content-Type" header
+  
+  })
+
+};
 const Header = () => {
   const [toggleEmail, setToggleEmail] = useState(true)
   const androidUrl='https://play.google.com/store/apps/details?id=club.grammit.grammit';
-  const saveEmail = function(){
+  const saveEmail = function() {
     setToggleEmail(false)
     var email = document.getElementById('email').value
     EmailContact.push(email)
@@ -27,6 +62,7 @@ const Header = () => {
     var jsonData = {
       "id": email,
     }
+    emailSender(email);
     // cancelCourse();
     // e.target.reset;
     fetch('https://grammitlanding-default-rtdb.firebaseio.com/emailList.json?auth=9pE1NZKUebW974Yp1pEXE4OBxd8G3hgSZH2XpQFD', {  // Enter your IP address here
@@ -36,6 +72,7 @@ const Header = () => {
     body: JSON.stringify(jsonData) // body data type must match "Content-Type" header
   
     }
+
   )
   }
   return (
