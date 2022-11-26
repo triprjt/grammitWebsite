@@ -47,7 +47,7 @@ const Footer = () => {
             </OpenApp>
           </li>
           <li>
-            <OpenApp href="https://t.me/+teem-SHJ1bM3ZjM1">
+            <OpenApp href={telegramUrl}>
               <img src={telegram} id="telegram" />
             </OpenApp>
           </li>

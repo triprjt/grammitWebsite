@@ -12,6 +12,7 @@ const WhitepaperOpen = () => {
 };
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(true);
+  const telegramUrl = "https://t.me/+nJGi4WKZA3FhZDll";
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
@@ -24,7 +25,7 @@ const Navbar = () => {
           {/* <p><a onClick={WhitepaperOpen}>Whitepaper</a></p> */}
           <p>
             <a
-              href="https://chat.whatsapp.com/EeNv92SqN2yAPnLCN07aKk"
+              href={telegramUrl}
               alt="comm"
               target="_blank"
               className="gpt3__navbar-links_container-comm"
@@ -52,9 +53,7 @@ const Navbar = () => {
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
               {/* <a onClick={WhitepaperOpen}>Whitepaper</a> */}
-              <a href="https://chat.whatsapp.com/EeNv92SqN2yAPnLCN07aKk">
-                Join the community
-              </a>
+              <a href={telegramUrl}>Join the community</a>
             </div>
           </div>
         )}
