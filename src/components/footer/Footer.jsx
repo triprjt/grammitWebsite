@@ -6,12 +6,14 @@ import twitter from "../../assets/twitter.svg";
 import whatsapp from "../../assets/whatsappImage.png";
 // import insta from '../../assets/insta.png';
 import telegram from "../../assets/telegram.svg";
+
 // import linkedin from '../../assets/linkedin.svg';
 import MobileStoreButton from "react-mobile-store-button";
 import OpenApp from "react-open-app";
 
 const Footer = () => {
   const whatsappUrl = "https://chat.whatsapp.com/EeNv92SqN2yAPnLCN07aKk";
+  const telegramUrl = "https://t.me/+nJGi4WKZA3FhZDll";
   const androidUrl =
     "https://play.google.com/store/apps/details?id=club.grammit.grammit";
   return (
@@ -19,7 +21,7 @@ const Footer = () => {
       <div className="gradient__text gpt3__footer__heading">
         <h3 className="gpt3__footer__heading__h1">Get Set GrammIt</h3>
         <h5 className="gpt3__footer__heading-join">
-          <a href={whatsappUrl}>Join the community</a>
+          <a href={telegramUrl}>Join the community</a>
         </h5>
       </div>
       <div id="downloadButton">

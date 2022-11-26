@@ -4,6 +4,7 @@ import PlayStoreImage from "./playStoreButton.png";
 // import WhatsappImage from "./WhatsApp.svg";
 // import WhatsappImage from "./iconmonstr-whatsapp-1.svg";
 import WhatsappImage from "./whatsappImage.png";
+import telegramImage from '../../assets/telegram.svg';
 import MobileStoreButton from "react-mobile-store-button";
 import OpenApp from "react-open-app";
 
@@ -52,7 +53,7 @@ const Header = () => {
   const [toggleEmail, setToggleEmail] = useState(true);
   const androidUrl =
     "https://play.google.com/store/apps/details?id=club.grammit.grammit";
-  const whatsappUrl = "https://chat.whatsapp.com/EeNv92SqN2yAPnLCN07aKk";
+  const telegramUrl = "https://t.me/+nJGi4WKZA3FhZDll";
   const saveEmail = function () {
     setToggleEmail(false);
     var email = document.getElementById("email").value;
@@ -121,8 +122,8 @@ const Header = () => {
           {/* <a href={whatsappUrl} target="_blank">
             <img src={WhatsappImage} id="whatsappImage" />
           </a> */}
-          <OpenApp href={whatsappUrl}>
-            <img src={WhatsappImage} id="whatsappImage" />
+          <OpenApp href={telegramUrl}>
+            <img src={telegramImage} id="whatsappImage" />
           </OpenApp>
           <p>Join the tribe that drives you</p>
         </div>
